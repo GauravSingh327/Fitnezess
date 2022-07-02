@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Help Page
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <style>
+            body{
+                background:url("images/WhatsApp Image 2022-05-21 at 4.38.54 PM.jpeg"); 
+                background-repeat: repeat;
+                margin:0;
+            }
+            body>div{   
+                padding:1%;
+                
+            } 
+            .report{
+                background:rgba(0,0,0,0.8);
+                color:white;
+                width:35%;
+                text-align:center;
+                margin-left:9%;
+                float:left
+            }
+            table{
+                background:rgba(0,0,0,0);
+                text-align:left;
+            }
+            table td{
+                padding:20px;
+            }
+
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: black;
+                background-color: white;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .button:hover {background-color: #555;}
+
+            /* form styling */
+            .feedback{
+                background:rgba(0,0,0,0.8);
+                color:white;
+                width:35%;
+                text-align:center;
+                margin-left:55%;
+                margin-top:20%;
+            }
+
+            
+            /** buttons */
+            .box {
+            border: 1pt solid var(--accent-bg);
+            padding: 0.5em;
+            margin-bottom: 0.4em;
+            }
+
+            /* -- star rating styling -- */
+            div.star_rating {
+            float: left;
+            }
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+             color: white;
+            }
+            input.star {
+            border: 0;
+            width: 10px;
+            height: 10px;
+            overflow: hidden;
+            position: absolute !important;
+            opacity: 0;
+            float: right;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            }
+
+            label.star {
+            position: relative;
+            float: right;
+            color: blue;
+            }
+
+            label.star:before {
+            margin: 5px;
+            content: url("images/ss.png");
+
+            font-family: arial;
+            font-size: 1.5em;
+            color: var(--accent-color);
+            -webkit-user-select: none; /* Safari 3.1+ */
+            -moz-user-select: none; /* Firefox 2+ */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none;
+            }
+
+            input.star:checked ~ label.star:before {
+            color: white;
+            border:10px;
+            }
+
+            label.star:hover ~ label.star:before {
+            color: red;
+            }
+            .active{
+                background: beige;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header" style="color:white;">
+                    <a href="homepage.html">
+                        <img src="https://cdn0.iconfinder.com/data/icons/fat-overweight-man-playing-sports-and-exercise/313/fat-man-sport-exercise-17-256.png" width=75px height=75px >
+                        <h1 style="display: inline; ">FITNEZESS</h1>
+                        <br>
+                     </a>
+                
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav">
+                <a href="homepage.html">Home</a>
+                <a href="complete-login-register-form-with-email-verification-main/index.php">Log-In</a>
+                <a href="complete-login-register-form-with-email-verification-main/register.php">Sign-Up</a>
+                <a href="health.html">Healthy Living</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contactus.html">Contact Us</a>
+                <a class="active" href="help.html">Help</a>
+                <a href="member.html">Member's Area</a>
+            </div>
+        </nav>
+        <br>
+        <div class="report">
+            <form method="post" action="help.html">
+                <h1 style="color:orange;"> REACH OUT TO US</h1>
+                <h3 style="color:orange;"> REPORT A PROBLEM</h3>
+                <table>
+                    <tr>
+                        <td class="input-group">
+                            <label>First Name</label><br>
+                            <input type="text" name="firstname" required>
+                        </td> 
+                        <td class="input-group">
+                            <label>Last Name</label><br>
+                            <input type="text" name="lastname" >
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td class="input-group">
+                            <label>Phone Number</label><br>
+                            <input type="text" name="mobile" required  pattern="[0-9]\d{9}" > 
+                        </td> 
+                        <td class="input-group">
+                            <label>Email</label><br>
+                            <input type="text" name="email" required pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+" placeholder="Format: xyz@gmail.com">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td class="input-group">
+                            <label>Leave us a message...</label><br>
+                            <input type="text" name="problem" style=" height:90px;" required>
+                        </td> 
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="input-group">
+                            <button type="submit" class="button" name="problem_submit" style="color:orange;">SUBMIT</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="feedback" >
+            <form name="star_submit" id="star_submit" action="help.html" method="post">
+                <h1 style="color:orange;"> FEEDBACK</h1>
+                <h3 style="color:orange;"> TELL US ABOUT YOUR EXPERIENCE</h3>
+                <table>
+                    <tr>
+                        <td class="input-group">
+                            <label>First Name</label><br>
+                            <input type="text" name="firstname1" >
+                        </td> 
+                        <td class="input-group">
+                            <label>Last Name</label><br>
+                            <input type="text" name="lastname1" >
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td class="input-group">
+                            <label>Phone Number</label><br>
+                            <input type="text" name="mobile1"  pattern="[0-9]\d{9}" >
+                        </td> 
+                        <td class="input-group">
+                            <label>Email</label><br>
+                            <input type="text" name="email1"  pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+" placeholder="Format: xyz@gmail.com">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td class="input-group">
+                            <label>Leave us a message...</label><br>
+                            <input type="text" name="feedback" style=" height:90px;" >
+                        </td> 
+                        <td colspan="1">
+                            <label>Rate Us </label> <br>
+                            <div class="star_rating">
+                                    <input type="checkbox" id="star5" name="rating[]" class="star" value="5">
+                                <label for="star5" class="star" title="5 stars"></label>
+                                    <input type="checkbox" id="star4" name="rating[]" class="star" value="4">
+                                <label for="star4" class="star" title="4 stars"></label>
+                                    <input type="checkbox" id="star3" name="rating[]" class="star" value="3">
+                                <label for="star3" class="star" title="3 stars"></label>
+                                    <input type="checkbox" id="star2" name="rating[]" class="star" value="2">
+                                <label for="star2" class="star" title="2 stars"></label>
+                                    <input type="checkbox" id="star1" name="rating[]" class="star" value="1">
+                                <label for="star1" class="star" title="1 stars"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="input-group">
+                            <button type="submit" class="button" name="feedback_submit" style="color:orange;">SUBMIT</button>
+                        </td>
+                        <td class="input-group">
+                            <button type="reset" class="button" style="color:orange;">RESET</button>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div>
+
+        <footer >
+            <div class="footer">
+                
+                
+                <center>
+                    FOLLOW US ON
+                    <div id="social-media"  >
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/its_gaurav.kholiya/" style="margin-right:50px"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png" alt="visit our instagram " class="social" style="width: 50px; height:50px;"></a>
+                        
+                        <a href="https://www.facebook.com/gauravkholiya121" style="margin-right:50px"><img src="images/fb.jpeg" alt="visit our facebook" style="width: 50px; height:50px;"></a>
+                    </div>
+                </center>
+                <!-- Copyright -->
+                <br>
+                <br>
+                <div class="footer-copyright" style=" background-color:rgba(255, 255, 255, 0.13);">
+                    &#169; 2022 Copyright:
+                  <a href="#homepage" style="text-decoration:none; color:rgba(255, 255, 255, 0.281);"> Fitnezess.com</a> 
+                  All rights reserved.<br>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+    </body>
+</html>    

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Workouts
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <style>    
+            body {
+            box-sizing: border-box;
+            }
+            
+            img {
+            vertical-align: middle;
+            }
+            
+            /* Position the image container (needed to position the left and right arrows) */
+            .container {
+            position: relative;
+            height:300px;
+            }
+            
+            /* Hide the images by default */
+            .mySlides {
+            display: none;
+            }
+            
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+            cursor: pointer;
+            }
+            
+            /* Next & previous buttons */
+            .prev,
+            .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+            
+            /* Container for image text */
+            .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+            }
+            
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            
+            /* Six columns side by side */
+            .column {
+            float: left;
+            width: 16.66%;
+            }
+            
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+            opacity: 0.3;
+            }
+            
+            .active,
+            .demo:hover {
+            opacity: 1;
+            }
+            .active{
+                background: beige;
+            }
+            body {
+            margin: 0;
+            }
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+             color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header" style="color:white;">
+                <a href="homepage.html">
+                    <center><img src="https://cdn0.iconfinder.com/data/icons/fat-overweight-man-playing-sports-and-exercise/313/fat-man-sport-exercise-17-256.png" width=75px height=75px ></center>
+                    <center><h1 style="display: inline; ">FITNEZESS</h1></center>
+                    <br>
+                 </a>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav">
+                <a href="homepage.html">Home</a>
+                <a href="workout.html" class="active">HIIT</a>
+                <a href="workout1.html">Stretching</a>
+                <a href="workout2.html">Weight Training</a>
+                <a href="workout3.html">Flexibility Training</a>
+                <a href="workout4.html">Yoga</a>
+                <a href="workout5.html">Pilates</a>
+            </div>
+        </nav>
+        
+        <h2 style="text-align: center; font-family: Satisfy, cursive;">Intense total body strength workout with a feel good cool down !</h2>
+
+        <div class="hiit" id="hiit" >
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <div class="container" >
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images\warmup.gif" style="width:80%; height:400px;display: block;margin-left: auto; margin-right: auto;">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images\one.gif" style="width:80%; height:400px;display: block;margin-left: auto; margin-right: auto;">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images\two.gif" style="width:80%; height:400px;display: block;margin-left: auto; margin-right: auto;">
+                </div>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images\three.gif" style="width:80%; height:400px;display: block;margin-left: auto; margin-right: auto;">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images\two.gif" style="width:80%; height:400px;display: block;margin-left: auto; margin-right: auto;">
+                </div>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images\cool.gif" style="width:80%; height:400px;display: block;margin-left: auto; margin-right: auto;">
+                </div>
+                    
+                <a class="prev" onclick="plusSlides(-1)"> &#8249; </a>
+                <a class="next" onclick="plusSlides(1)"> &#8250; </a>
+                
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images\t1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Warm Up ">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="images\t2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Step 1: 20 reps">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="images\t3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Step 2 : 25 reps">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="images\t4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Step 3 : 30 reps : Almost there don't give Up!">
+                        </div>
+                        <div class="column">
+                        <img class="demo cursor" src="images\t5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Step 4 : 40 reps : Last One Now Keep Going!!">
+                        </div>    
+                        <div class="column">
+                        <img class="demo cursor" src="images\t6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cool Down : You did it!">
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                var slideIndex = 1;
+                    showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+            <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            
+        </div>
+
+        
+        <footer >
+            <div class="footer">
+                <center>
+                    FOLLOW US ON
+                    <div id="social-media"  >
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/its_gaurav.kholiya/" style="margin-right:50px"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png" alt="visit our instagram " class="social" style="width: 50px; height:50px;"></a>
+                        
+                        <a href="https://www.facebook.com/gauravkholiya121" style="margin-right:50px"><img src="images/fb.jpeg" alt="visit our facebook" style="width: 50px; height:50px;"></a>
+                    </div>
+                </center>
+                <!-- Copyright -->
+                <div class="footer-copyright" style=" background-color:rgba(255, 255, 255, 0.13);">
+                  © 2022 Copyright:
+                  <a href="homepage.html" style="text-decoration:none; color:rgba(255, 255, 255, 0.281);"> Fitnezess.com</a> 
+                  All rights reserved.<br>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+    </body>
+</html>    

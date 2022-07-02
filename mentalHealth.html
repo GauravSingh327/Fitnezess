@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        Mental health
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <style>
+            
+        body { margin: 0; }
+        
+        .start {
+            background-image: url("images/home.gif");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .start-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .topnav a.active {
+          background-color: #04AA6D;
+         color: white;
+        }
+        .column {
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display:inline-block;
+            padding: 0 8px;
+            text-align: center;
+            width:23%;
+            height:100px;
+            font-size:small;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+        .container {padding: 16px;}
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {background-color: #555;}
+        .team {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .info .team-area {
+            display: flex;
+            width: 50vw;
+        }
+
+        .info .team-area .team-member:hover .video-background {
+            animation: fadeIn .3s ease-in-out forwards;
+            
+        }
+
+        .info .team-area .team-member:not(:hover) .video-background {
+            animation: fadeOut .3s ease-in-out forwards;
+        }
+
+        .info .team-area .team-member .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .info .team-area .team-member .thumb {
+            width: 150px;
+            height: 150px;
+        }
+
+        .info .team-area .team-member .thumb img {
+            width: 100%;
+            border-radius: 50%; 
+        }
+
+        .info .team-area .team-member .name {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0 }
+            to { opacity: 0.8; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1 }
+            to { opacity: 0; }
+        }
+
+        /* Our Motto */
+        .special {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        background: #f1f1f1; 
+        overflow: hidden;
+        margin-top: 5px;
+        padding-left:20%;
+        height:400px;
+        }
+         a{
+            text-decoration: none;
+         }
+
+        .perspective-text {
+        color:  white; 
+        font-family: Arial;
+        font-size: 58px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        }
+
+        .perspective-line {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        }
+
+        .special p {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+        transition: all 0.5s ease-in-out;
+        }
+
+        .perspective-line:nth-child(odd) {
+        transform: skew(60deg, -1deg) scaleY(0.667);
+        }
+
+        .perspective-line:nth-child(even) {
+        transform: skew(0deg, -1deg) scaleY(1.337);
+        }
+
+        .perspective-text:hover p {
+        transform: translate(0, -50px);
+        }
+
+        .perspective-line:nth-child(1) {
+        left: 29px;
+        }
+
+        .perspective-line:nth-child(2) {
+        left: 58px;
+        background: #fca503;
+        }
+
+        .perspective-line:nth-child(3) {
+        left: 87px;
+        background: #34affc;
+        }
+
+        .perspective-line:nth-child(4) {
+        left: 116px;
+        background: #97b822;
+        }
+
+        .perspective-line:nth-child(5) {
+        left: 145px;
+        }
+        .active{
+            background: beige;
+        }
+        .describe,.container{
+            color: #000;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="header" style="color:white;">
+            <a href="homepage.html">
+                <center><img src="https://cdn0.iconfinder.com/data/icons/fat-overweight-man-playing-sports-and-exercise/313/fat-man-sport-exercise-17-256.png" width=75px height=75px ></center>
+                <center><h1 style="display: inline; ">FITNEZESS</h1></center>
+                <br>
+             </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="topnav">
+            <a href="homepage.html">Home</a>
+            <a href="index.html">Log-In</a>
+            <a href="register.html">Sign-Up</a>
+            <a href="health.html">Healthy Living</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="help.html">Help</a>
+            <a class="active"  href="member.html">Member's Area</a>
+        </div>
+    </nav>
+
+    <!-- body comes here  -->
+    <div class="about">
+        <h1><center> Different tests you want to give </center></h1>
+        <div class="column">
+            <a href="anxiety.html" target="_blank">
+            <div class="card">
+              <img src="images/anx.jpg" alt="anxiety" style="width:100%;">
+              <div class="container">
+                <h2>ANXIETY TEST</h2>
+                <p class="describe">Anxiety is the mind and body's reaction to stressful, dangerous, or unfamiliar situations.</p>
+              </div>
+            </div>
+            </a>
+        </div>
+        
+        <div class="column">
+            <a href="stress.html" target="_blank">
+            <div class="card">
+                <img src="images/str.jpg" alt="stress" style="width:100%">
+                <div class="container">
+                <h2>STRESS TEST</h2>
+                <p class="describe">Stress can be defined as any type of change that causes physical, emotional, or psychological strain.
+                     Stress is your body's response to anything that requires attention or action. 
+                    Everyone experiences stress to some degree. 
+                    The way you respond to stress, however, makes a big difference to your overall well-being.</p>
+                
+                </div>
+            </div>
+            </a>
+        </div> 
+
+        <div class="column">
+            <a href="ptsd.html" target="_blank">
+            <div class="card">
+                <img src="images/p.jpg" alt="ptsd" style="width:100%">
+                <div class="container">
+                <h2>PTSD TEST</h2>
+                <p class="describe">A mental health condition that develops following a traumatic event characterised by intrusive thoughts about the incident, recurrent distress/anxiety, flashback and avoidance of similar situations.</p>
+                
+                </div>
+            </div>
+        </a>
+        </div> 
+
+        <div class="column">
+            <a href="schizophrenia.html" target="_blank">
+            <div class="card">
+                <img src="images/sch.jpg" alt="schizophrenia" style="width:100%">
+                <div class="container">
+                <h2>SCHIZOPHRENIA TEST</h2>
+                <p class="describe">a long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behaviour, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.</p>
+                </div>
+            </div>
+        </a>
+        </div> 
+    </div>
+    <br><br>
+
+    <footer >
+        <div class="footer">
+            <center>
+                FOLLOW US ON
+                <div id="social-media"  >
+                    <br>
+                    <br>
+                    <a href="https://www.instagram.com/its_gaurav.kholiya/" style="margin-right:50px"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png" alt="visit our instagram " class="social" style="width: 50px; height:50px;"></a>
+                    
+                    <a href="https://www.facebook.com/gauravkholiya121" style="margin-right:50px"><img src="images/fb.jpeg" alt="visit our facebook" style="width: 50px; height:50px;"></a>
+                </div>
+            </center>
+            <!-- Copyright -->
+            <div class="footer-copyright" style=" background-color:rgba(255, 255, 255, 0.13);">
+              © 2022 Copyright:
+              <a href="homepage.html" style="text-decoration:none; color:rgba(255, 255, 255, 0.281);"> Fitnezess.com</a> 
+              All rights reserved.<br>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+
+  </body>
+</html>  

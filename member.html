@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Member's Area
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <style>
+            body{
+                background:rgb(199, 157, 157);
+                background-size: cover;
+                margin:0;
+            }
+            body>div{   
+                padding:1%;
+            } 
+
+            /* Pages Slide content*/
+
+            .hero_content{
+                justify-content: center;
+                margin-left:5%;
+            }
+            .container {
+            position: relative;
+            width: 30%;
+            float:left;
+            margin-left:5%;
+            margin-right:4%;
+            margin-top:2%;
+            margin-bottom:2%;
+            }
+
+            .image {
+            display: block;
+            width: 100%;
+            height: auto; 
+            }
+            .image1{
+                display: block;
+                width: 103%;
+                height: :auto;
+                }
+            .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fcbb30;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            }
+
+            .container:hover .overlay {
+            height: 100%;
+            }
+
+            .text {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+            .text a:hover{
+                background:cornsilk;
+                border-radius:10%;
+            }
+
+            /* Heading */
+            .rotate {
+            transform: rotate(180deg);
+            }
+
+            #heading {
+            display: grid;
+            height: 50%;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: max-content max-content;
+            margin-left:8%;
+            margin-top:1%;
+            float:left;
+            }
+
+            #heading h2 {
+            font-size: 95px;
+            margin: 0;
+            writing-mode: vertical-lr;
+            text-align: center;
+            line-height: .9;
+
+            }
+            .active{
+                background: rgb(240, 174, 174);
+                color:white;
+            }
+            .topnav {
+            overflow: hidden;
+            background-color: rgb(223, 173, 173);
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: rgb(221, 155, 155);
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+             color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header" style="color:white;">
+                <a href="homepage.html">
+                    <center><img src="https://cdn0.iconfinder.com/data/icons/fat-overweight-man-playing-sports-and-exercise/313/fat-man-sport-exercise-17-256.png" width=75px height=75px ></center>
+                    <center><h1 style="display: inline; ">FITNEZESS</h1></center>
+                    <br>
+                 </a>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav">
+                <a href="homepage.html">Home</a>
+                <a href="complete-login-register-form-with-email-verification-main/index.php">Log-In</a>
+                <a href="complete-login-register-form-with-email-verification-main/register.php">Sign-Up</a>
+                <a href="health.html">Healthy Living</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="help.html">Help</a>
+                <a class="active"  href="member.html">Member's Area</a>
+            </div>
+        </nav>
+            <div id="heading">
+                    <h2 class="rotate" style="color:orange;">Member's</h2>
+                    <h2 style="color:white;">Area</h2>
+            </div>
+            
+            <div class="hero_content">
+                <div class="container" >
+                    <a href="mentalHealth.html">
+                    <img src="images/m1.jpeg" alt="Mental health" class="image1" >
+                    <div class="overlay" style="background-color: #fcbb30;">
+                        <div class="text">
+                            Let us focus on that most of us take as granted and reget late that is our Mental health.
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="workout.html">
+                    <img src="images/work.jpg" alt="My Workouts" class="image">
+                    <div class="overlay" style="background-color: #f72435;">
+                        <div class="text">
+                        Get all prepped up! Whether it is a stretch day or you feel like going high intensity, we have got you covered in all areas.
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="meditate.html">
+                    <img src="images/medi.jpg" alt="Meditation" class="image">
+                    <div class="overlay" style="background-color: #633103;">
+                        <div class="text">
+                        Connect to your inner self with the power of mind training and mind-body connection. Join our sessions or watch life illuminating videos exclusively for you.
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="container" >
+                    <a href="php-to-do-list-master/index.php">
+                    <img src="images/todo.jpg" alt="To-Do List" class="image">
+                    <div class="overlay" style="background-color: #3fcc52;">
+                        <div class="text">
+                        Free up your mental space. Regain clarity and calmness by getting all those tasks out of your head and onto your to-do list, digitally!
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div> 
+
+        <footer >
+            <div class="footer">
+                <center>
+                    FOLLOW US ON
+                    <div id="social-media"  >
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/its_gaurav.kholiya/" style="margin-right:50px"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png" alt="visit our instagram " class="social" style="width: 50px; height:50px;"></a>
+                        
+                        <a href="https://www.facebook.com/gauravkholiya121" style="margin-right:50px"><img src="images/fb.jpeg" alt="visit our facebook" style="width: 50px; height:50px;"></a>
+                    </div>
+                </center>
+                <!-- Copyright -->
+                <div class="footer-copyright" style=" background-color:rgba(255, 255, 255, 0.13);">
+                  © 2022 Copyright:
+                  <a href="homepage.html" style="text-decoration:none; color:rgba(255, 255, 255, 0.281);"> Fitnezess.com</a> 
+                  All rights reserved.<br>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+    </body>
+</html>    

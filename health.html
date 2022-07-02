@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Healthy Living
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <style>
+            body {
+            margin: 0;
+            background:url("https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&w=1000&q=80"); /* background:url("https://images.unsplash.com/photo-1544171779-783118e110f8?ixlib=rb-1.2.1&w=1000&q=80"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+
+            p {
+            line-height: 1.5;
+            }
+
+            a {
+            text-decoration: none;
+            color: black;
+            }
+            
+            .page-heading{
+            font-size:25px;
+            border-left:3px solid black;
+            border-right:3px solid black;
+            transition: all 0.4s;
+            display:inline-block;
+            padding:4px 32px;
+            margin: 50px;
+            }
+
+            .page-heading:hover{
+            padding:4px 48px;
+            background:orange;
+            }
+
+
+            /* Section */
+
+            section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            }
+
+            /* Card */
+            .card-meta{
+            color:#333;
+            font-size: 14px;
+            padding-left:8px;
+            font-family:'Roboto Slab', serif;
+            }
+
+            .card-meta a{
+            color:#333;
+            } 
+
+            .card{
+                display: inline;
+                width:40%;
+                padding:10px;
+            }
+            .card-image {
+            transition: 0.4s;
+            display: inline-block;
+            }
+
+            .card-image:hover {
+            box-shadow: 0 10px 6px -6px #777;
+            }
+
+            .card .card-description {
+            padding: 0 8px;
+            }
+
+            /* Button Read more */
+
+            .btn-readmore {
+            padding: 8px 24px;
+            border: 3px solid black;
+            transition: 0.4s;
+            display: inline-block;
+            margin-bottom: 24px;
+            margin-left: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            background: white;
+            }
+
+            .btn-readmore:hover {
+            background: orange;
+            text-decoration: none;
+            padding: 8px 64px 8px 24px;
+            color: white;
+            }
+
+            /* Pagination */
+
+            .pagination{
+            padding:8px;
+            text-align:center;
+            font-weight:bold;
+            }
+
+            .pagination a{
+            border-top: 3px solid white;
+            display: inline-block;
+            padding:8px 16px;
+            transition:0.4s;
+            }
+
+            .pagination a:hover{
+            text-decoration: none;
+            border-top:3px solid black;
+            }
+
+            .active{
+                background: beige;
+            }
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .topnav a.active {
+              background-color: #04AA6D;
+             color: white;
+            }
+
+
+        </style>
+    </head>
+    <body>
+      <header>
+        <div class="header" style="color:white;">
+           <a href="homepage.html">
+              <center>
+                 <img src="images/logo.png" width=35px height=30px>
+                 <h1 style="display: inline; ">FITNEZESS</h1>
+              </center>
+           </a>
+        </div>
+    </header>
+  
+    
+    <nav>
+     <div class="topnav">
+         <a  href="homepage.html">Home</a>
+         <a href="complete-login-register-form-with-email-verification-main/index.php">Log-In</a>
+         <a href="complete-login-register-form-with-email-verification-main/register.php">Sign-Up</a>
+         <a class="active" href="health.html">Healthy Living</a>
+         <a href="faq.html">FAQ</a>
+         <a href="contactus.html">Contact Us</a>
+         <a href="help.html">Help</a>
+         <a href="member.html">Member's Area</a>
+     </div>
+  </nav>
+        <h3 class="page-heading">Healthy Living Blogs</h3>
+        <section>
+            <div class="card">
+              <div class="card-image">
+                <a href="blogpost.html">
+                  <img src="images/sp.jpeg" alt="Card Image" width="100%" height="100%">
+                </a>
+              </div>
+      
+              <div class="card-description">
+                <a href="blogpost.html">
+                  <h3>Apartment-Friendly Workouts That Pack a Punch: Workout Videos for Apartments & Small Spaces</h3>
+                </a>
+                <div class="card-meta">
+                  Posted by bhanupriya Chilwal on 23/4/2022 in
+                  <a href="index.html">Fitnezess</a>
+                </div>
+                <p>
+                    When I was a (completely & totally broke) college student and for a few years after, I lived in small apartments. I was still 
+                    mostly doing gym workouts at that point, but every now and again I would tackle a workout in my apartment.
+                </p>
+                <a href="blogpost.html" class="btn-readmore">Read more</a>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-image">
+                <a href="blogpost.html">
+                  <img src="images/bg4.jpg" alt="Card Image" width="100%" height="100%">
+                </a>
+              </div>
+      
+              <div class="card-description">
+                <a href="blogpost.html">
+                  <h3>Running: Is it really good for your health? The dangers of over training</h3>
+                </a>
+                <div class="card-meta">
+                  Posted by Bhanupriya on 3/5/2022 in
+                  <a href="index.html">Fitnezess</a>
+                </div>
+                <p>
+                    Running sounds like a healthy activity and in general anything that makes you move and keeps you active is good for your health 
+                    overall when compared to living a sedentary lifestyle, however, too much running may lead to injury. 
+                </p>
+                <a href="blogpost.html" class="btn-readmore">Read more</a>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-image">
+                <a href="blogpost.html">
+                  <img src="images/ss.jpeg" alt="Card Image" width="100%" height="100%">
+                </a>
+              </div>
+      
+              <div class="card-description">
+                <a href="blogpost.html">
+                  <h3>Dealing with Setbacks. How to Stay Fit While Injured or Sick</h3>
+                </a>
+                <div class="card-meta">
+                  Posted by bhanupriya Chilwal on 20/10/2022 in
+                  <a href="index.html">Fitnezess</a>
+                </div>
+                <p>
+                    My workouts are my me time  they keep me grounded, help me focus, and make me feel good. I think many people consider their 
+                    workout sessions a sort of personal therapy, so it's no wonder that an extended hiatus would be challenging for multiple reasons. 
+                </p>
+                <a href="blogpost.html" class="btn-readmore">Read more</a>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-image">
+                <a href="blogpost.html">
+                  <img src="images/e7a56966-3800-404a-8e6d-874f105dcc63.jpg" alt="Card Image" width="100%" height="100%">                </a>
+              </div>
+      
+              <div class="card-description">
+                <a href="blogpost.html">
+                  
+                  <h3>How to Eat When Training for a Marathon. Nutrition for Endurance Athletes</h3>
+                </a>
+                <div class="card-meta">
+                  Posted by Bhanupriya on 12/10/2022 in
+                  <a href="index.html">Fitnezess</a>
+                </div>
+                <p>
+                    Strength is needed for this adventure.  Now that you have a plan mapped out, you are almost ready to get started and train.  The one 
+                     remaining is figuring out a solid diet plan that will allow you to have the proper fuel to allow you to make it to the finish line. 
+                </p>
+                <a href="blogpost.html" class="btn-readmore">Read more</a>
+              </div>
+            </div>  
+        </section>
+
+        <div class="pagination">
+            <a>Prev</a>
+            <a href="health.html">2</a>
+            <a href="health.html">3</a>
+            <a href="health.html">4</a>
+            <a href="health.html">Next</a>
+        </div>
+
+        <footer style="margin-top:3%;">
+            <div class="footer">
+                
+                <center>
+                  FOLLOW US ON 
+                  <div id="social-media"  >
+                    <br>
+                    <br>
+                    <a href="https://www.instagram.com/its_gaurav.kholiya/" style="margin-right:50px"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png" alt="visit our instagram " class="social" style="width: 50px; height:50px;"></a>
+                    
+                    <a href="https://www.facebook.com/gauravkholiya121" style="margin-right:50px"><img src="images/fb.jpeg" alt="visit our facebook" style="width: 50px; height:50px;"></a>
+                </div>
+                </center>
+                <!-- Copyright -->
+                <div class="footer-copyright" style=" background-color:rgba(255, 255, 255, 0.13);">
+                  &#169; 2022 Copyright:
+                  <a href="homepage.html" style="text-decoration:none; color:rgba(255, 255, 255, 0.281);"> Fitnezess.com</a> 
+                  All rights reserved.<br>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+    </body>
+</html>    
